@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#Get Kube Token for SA:
+KUBE_TOKEN=$(cat /run/secrets/kubernetes.io/serviceaccount/token)
+
+
+#Get Kubernetes Pods
+curl --silent -k -H "Authorization: Bearer $KUBE_TOKEN" -X GET https://kubernetes.default.svc.cluster.local/api/v1/namespaces/default/pods | jq
