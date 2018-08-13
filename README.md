@@ -16,7 +16,7 @@ HackSaw can be run on any Docker daemon using the following command:
 docker run -it quay.io/aric49/hacksaw:latest
 ```
 
-Exec-ing into this container will give you full access to a minimal shell giving you commonly used debugging tools such as  `curl`, `nslookup`, `dig`, `ping`.
+Exec-ing into this container will give you full access to a minimal shell giving you commonly used debugging tools such as  `curl`, `nslookup`, `dig`, `ping/hping`, `netcat`, `openssl`, `tmux`, `git`, and many others.
 
 ## Running HackSaw in Kubernetes
 Using the below command, you spin up a super fast Kubernetes deployment which will drop you directly into an interactive session:
