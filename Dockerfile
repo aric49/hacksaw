@@ -1,5 +1,5 @@
-FROM alpine:3.8
-MAINTAINER Aric Renzo - aricrenzo@gmail.com
+FROM alpine:3.9
+LABEL maintainer="Aric Renzo - aricrenzo@gmail.com"
 
 RUN apk update --no-cache &&\
     apk add --no-cache curl bind-tools jq util-linux iputils drill vim nmap htop tcpdump tmux git openssl netcat-openbsd &&\
